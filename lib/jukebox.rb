@@ -1,3 +1,4 @@
+require 'pry'
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -17,3 +18,5 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
+
+binding.pry
