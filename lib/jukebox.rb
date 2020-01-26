@@ -36,5 +36,7 @@ def play(songs)
       valid = true
     end
   end
-  puts "Invalid input, please try again"
+  if valid == false
+    puts "Invalid input, please try again"
+  end
 end
