@@ -49,6 +49,16 @@ def run(songs)
   loop do
     puts "Please enter a command:"
     input = gets.strip
+
+    case input
+    when 'exit'
+      break
+    when 'help'
+      help
+    when 'list'
+      list(songs)
+    when 'play'
+      play(songs)
   end
 
 end
