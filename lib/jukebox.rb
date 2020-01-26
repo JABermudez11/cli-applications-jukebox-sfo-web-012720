@@ -32,7 +32,7 @@ def play(songs)
       puts "Playing #{songs[index]}"
       valid = true
     elsif (input == song)
-      puts "Playing #{choice}"
+      puts "Playing #{input}"
       valid = true
     end
   end
