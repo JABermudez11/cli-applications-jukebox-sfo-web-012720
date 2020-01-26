@@ -28,10 +28,10 @@ def play(songs)
   input = gets.strip
   valid = false
   songs.each_with_index do |song, index|
-    if (choice.to_i - 1 == index)
+    if (input.to_i - 1 == index)
       puts "Playing #{songs[index]}"
       valid = true
-    elsif (choice == song)
+    elsif (input == song)
       puts "Playing #{choice}"
       valid = true
     end
