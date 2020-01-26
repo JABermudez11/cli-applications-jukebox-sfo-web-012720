@@ -26,6 +26,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
+  valid = false
   songs.each_with_index do |song, index|
     if (choice.to_i - 1 == index)
       puts "Playing #{songs[index]}"
@@ -35,5 +36,5 @@ def play(songs)
       valid = true
     end
   end
-  
+
 end
