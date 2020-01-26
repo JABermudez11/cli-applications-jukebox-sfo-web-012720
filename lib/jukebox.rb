@@ -53,6 +53,7 @@ def run(songs)
 
     case input
     when 'exit'
+      exit_jukebox
       break
     when 'help'
       help
@@ -62,5 +63,4 @@ def run(songs)
       play(songs)
     end
   end
-  exit_jukebox
 end
