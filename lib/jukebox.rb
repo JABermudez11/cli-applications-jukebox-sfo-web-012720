@@ -27,12 +27,12 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
   songs.each_with_index do |song, index|
-  if (choice.to_i - 1 == index)
-    puts "Playing #{songs[index]}"
-    valid = true
-  elsif (choice == song)
-    puts "Playing #{choice}"
-    valid = true
+    if (choice.to_i - 1 == index)
+      puts "Playing #{songs[index]}"
+      valid = true
+    elsif (choice == song)
+      puts "Playing #{choice}"
+      valid = true
     end
   end
 end
